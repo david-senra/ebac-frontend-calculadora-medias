@@ -48,7 +48,7 @@ function atualizaTabela() {
 
 function atualizaMedia() {
     const mediaFinal = calculaMedia();
-    mediaDasNotas.innerHTML = mediaFinal;
+    mediaDasNotas.innerHTML = mediaFinal.toFixed(2);
     resultadoFinal.innerHTML = mediaFinal >= 7 ? spanAprovado : spanReprovado;
 }
 
